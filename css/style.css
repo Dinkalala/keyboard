@@ -136,6 +136,7 @@ main {
 
 .active {
   background: rgb(255, 107, 132);
+  border-radius: 20%;
 }
 
 .letter {
