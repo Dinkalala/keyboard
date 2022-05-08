@@ -1,13 +1,14 @@
+/* eslint-disable linebreak-style */
+/* eslint-disable default-param-last */
+
 /**
- * @param {String} el
+ * @param {HTMLElement} el
  * @param {String} classNames
  * @param {HTMLElement} child
  * @param {HTMLElement} parent
- * @param  {...array} dataAttr
+ * @param  {...any} dataAttr
  */
-
-  export default function create(el, classNames = '', child, parent, ...dataAttr) {
-  // Create HTMLElement
+export default function create(el, classNames = '', child, parent, ...dataAttr) {
   let element = null;
   try {
     element = document.createElement(el);
@@ -15,14 +16,13 @@
     throw new Error('Unable to create HTMLElement! You should give a proper HTML tag name');
   }
 
-  // split and apply classNames
   if (classNames) element.classList.add(...classNames.split(' '));
 
   if (child && Array.isArray(child)) {
     child.forEach((childElement) => childElement && element.appendChild(childElement));
   } else if (child && typeof child === 'object') {
     element.appendChild(child);
-  } else if (child && typeof child === 'string') {
+  } else if (typeof child === 'string') {
     element.innerHTML = child;
   }
   if (parent) {

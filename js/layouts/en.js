@@ -1,268 +1,393 @@
-"use strict";
-
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports["default"] = void 0;
-var _default = [{
-  small: '`',
-  shift: '~',
-  code: 'Backquote'
-}, {
-  small: '1',
-  shift: '!',
-  code: 'Digit1'
-}, {
-  small: '2',
-  shift: '@',
-  code: 'Digit2'
-}, {
-  small: '3',
-  shift: '#',
-  code: 'Digit3'
-}, {
-  small: '4',
-  shift: '$',
-  code: 'Digit4'
-}, {
-  small: '5',
-  shift: '%',
-  code: 'Digit5'
-}, {
-  small: '6',
-  shift: '^',
-  code: 'Digit6'
-}, {
-  small: '7',
-  shift: '&',
-  code: 'Digit7'
-}, {
-  small: '8',
-  shift: '*',
-  code: 'Digit8'
-}, {
-  small: '9',
-  shift: '(',
-  code: 'Digit9'
-}, {
-  small: '0',
-  shift: ')',
-  code: 'Digit0'
-}, {
-  small: '-',
-  shift: '_',
-  code: 'Minus'
-}, {
-  small: '=',
-  shift: '+',
-  code: 'Equal'
-}, {
-  small: 'Backspace',
-  shift: null,
-  code: 'Backspace'
-}, {
-  small: 'Delete',
-  shift: null,
-  code: 'Delete'
-}, {
-  small: 'Tab',
-  shift: null,
-  code: 'Tab'
-}, {
-  small: 'q',
-  shift: 'Q',
-  code: 'KeyQ'
-}, {
-  small: 'w',
-  shift: 'W',
-  code: 'KeyW'
-}, {
-  small: 'e',
-  shift: 'E',
-  code: 'KeyE'
-}, {
-  small: 'r',
-  shift: 'R',
-  code: 'KeyR'
-}, {
-  small: 't',
-  shift: 'T',
-  code: 'KeyT'
-}, {
-  small: 'y',
-  shift: 'Y',
-  code: 'KeyY'
-}, {
-  small: 'u',
-  shift: 'U',
-  code: 'KeyU'
-}, {
-  small: 'i',
-  shift: 'I',
-  code: 'KeyI'
-}, {
-  small: 'o',
-  shift: 'O',
-  code: 'KeyO'
-}, {
-  small: 'p',
-  shift: 'P',
-  code: 'KeyP'
-}, {
-  small: '[',
-  shift: '{',
-  code: 'BracketLeft'
-}, {
-  small: ']',
-  shift: '}',
-  code: 'BracketRight'
-}, {
-  small: 'Enter',
-  shift: null,
-  code: 'Enter'
-}, {
-  small: 'CapsLock',
-  shift: null,
-  code: 'CapsLock'
-}, {
-  small: 'a',
-  shift: 'A',
-  code: 'KeyA'
-}, {
-  small: 's',
-  shift: 'S',
-  code: 'KeyS'
-}, {
-  small: 'd',
-  shift: 'D',
-  code: 'KeyD'
-}, {
-  small: 'f',
-  shift: 'F',
-  code: 'KeyF'
-}, {
-  small: 'g',
-  shift: 'G',
-  code: 'KeyG'
-}, {
-  small: 'h',
-  shift: 'H',
-  code: 'KeyH'
-}, {
-  small: 'j',
-  shift: 'J',
-  code: 'KeyJ'
-}, {
-  small: 'k',
-  shift: 'K',
-  code: 'KeyK'
-}, {
-  small: 'l',
-  shift: 'L',
-  code: 'KeyL'
-}, {
-  small: ';',
-  shift: ':',
-  code: 'Semicolon'
-}, {
-  small: "'",
-  shift: '"',
-  code: 'Quote'
-}, {
-  small: '\\',
-  shift: '|',
-  code: 'Backslash'
-}, {
-  small: 'Shift',
-  shift: null,
-  code: 'ShiftLeft'
-}, {
-  small: '<',
-  shift: '>',
-  code: 'IntlBackslash'
-}, {
-  small: 'z',
-  shift: 'Z',
-  code: 'KeyZ'
-}, {
-  small: 'x',
-  shift: 'X',
-  code: 'KeyX'
-}, {
-  small: 'c',
-  shift: 'C',
-  code: 'KeyC'
-}, {
-  small: 'v',
-  shift: 'V',
-  code: 'KeyV'
-}, {
-  small: 'b',
-  shift: 'B',
-  code: 'KeyB'
-}, {
-  small: 'n',
-  shift: 'N',
-  code: 'KeyN'
-}, {
-  small: 'm',
-  shift: 'M',
-  code: 'KeyM'
-}, {
-  small: ',',
-  shift: '<',
-  code: 'Comma'
-}, {
-  small: '.',
-  shift: '>',
-  code: 'Period'
-}, {
-  small: '/',
-  shift: '?',
-  code: 'Slash'
-}, {
-  small: 'Shift',
-  shift: null,
-  code: 'ShiftRight'
-}, {
-  small: 'Ctrl',
-  shift: null,
-  code: 'ControlLeft'
-}, {
-  small: 'Alt',
-  shift: null,
-  code: 'AltLeft'
-}, {
-  small: ' ',
-  shift: null,
-  code: 'Space'
-}, {
-  small: 'Alt',
-  shift: null,
-  code: 'AltRight'
-}, {
-  small: 'Ctrl',
-  shift: null,
-  code: 'ControlRight'
-}, {
-  small: '&larr;',
-  shift: null,
-  code: 'ArrowLeft'
-}, {
-  small: '&uarr;',
-  shift: null,
-  code: 'ArrowUp'
-}, {
-  small: '&darr;',
-  shift: null,
-  code: 'ArrowDown'
-}, {
-  small: '&rarr;',
-  shift: null,
-  code: 'ArrowRight'
-}, {
-  small: 'language',
-  shift: null,
-  code: 'Win'
-}];
-exports["default"] = _default;
+/* eslint-disable linebreak-style */
+export default [
+  {
+    small: '`',
+    shift: '~',
+    code: 'Backquote',
+    keycode: '192',
+  },
+  {
+    small: '1',
+    shift: '!',
+    code: 'Digit1',
+    keycode: '49',
+  },
+  {
+    small: '2',
+    shift: '@',
+    code: 'Digit2',
+    keycode: '50',
+  },
+  {
+    small: '3',
+    shift: '#',
+    code: 'Digit3',
+    keycode: '51',
+  },
+  {
+    small: '4',
+    shift: '$',
+    code: 'Digit4',
+    keycode: '52',
+  },
+  {
+    small: '5',
+    shift: '%',
+    code: 'Digit5',
+    keycode: '53',
+  },
+  {
+    small: '6',
+    shift: '^',
+    code: 'Digit6',
+    keycode: '54',
+  },
+  {
+    small: '7',
+    shift: '&',
+    code: 'Digit7',
+    keycode: '55',
+  },
+  {
+    small: '8',
+    shift: '*',
+    code: 'Digit8',
+    keycode: '56',
+  },
+  {
+    small: '9',
+    shift: '(',
+    code: 'Digit9',
+    keycode: '57',
+  },
+  {
+    small: '0',
+    shift: ')',
+    code: 'Digit0',
+    keycode: '48',
+  },
+  {
+    small: '-',
+    shift: '_',
+    code: 'Minus',
+    keycode: '189',
+  },
+  {
+    small: '=',
+    shift: '+',
+    code: 'Equal',
+    keycode: '187',
+  },
+  {
+    small: 'Backspace',
+    shift: null,
+    code: 'Backspace',
+    keycode: '8',
+  },
+  {
+    small: 'Delete',
+    shift: null,
+    code: 'Delete',
+    keycode: '46',
+  },
+  {
+    small: 'Tab',
+    shift: null,
+    code: 'Tab',
+    keycode: '9',
+  },
+  {
+    small: 'q',
+    shift: 'Q',
+    code: 'KeyQ',
+    keycode: '81',
+  },
+  {
+    small: 'w',
+    shift: 'W',
+    code: 'KeyW',
+    keycode: '87',
+  },
+  {
+    small: 'e',
+    shift: 'E',
+    code: 'KeyE',
+    keycode: '69',
+  },
+  {
+    small: 'r',
+    shift: 'R',
+    code: 'KeyR',
+    keycode: '82',
+  },
+  {
+    small: 't',
+    shift: 'T',
+    code: 'KeyT',
+    keycode: '84',
+  },
+  {
+    small: 'y',
+    shift: 'Y',
+    code: 'KeyY',
+    keycode: '89',
+  },
+  {
+    small: 'u',
+    shift: 'U',
+    code: 'KeyU',
+    keycode: '85',
+  },
+  {
+    small: 'i',
+    shift: 'I',
+    code: 'KeyI',
+    keycode: '73',
+  },
+  {
+    small: 'o',
+    shift: 'O',
+    code: 'KeyO',
+    keycode: '79',
+  },
+  {
+    small: 'p',
+    shift: 'P',
+    code: 'KeyP',
+    keycode: '80',
+  },
+  {
+    small: '[',
+    shift: '{',
+    code: 'BracketLeft',
+    keycode: '219',
+  },
+  {
+    small: ']',
+    shift: '}',
+    code: 'BracketRight',
+    keycode: '221',
+  },
+  {
+    small: 'Enter',
+    shift: null,
+    code: 'Enter',
+    keycode: 13,
+  },
+  {
+    small: 'CapsLock',
+    shift: null,
+    code: 'CapsLock',
+    keycode: '0',
+  },
+  {
+    small: 'a',
+    shift: 'A',
+    code: 'KeyA',
+    keycode: '65',
+  },
+  {
+    small: 's',
+    shift: 'S',
+    code: 'KeyS',
+    keycode: '83',
+  },
+  {
+    small: 'd',
+    shift: 'D',
+    code: 'KeyD',
+    keycode: '68',
+  },
+  {
+    small: 'f',
+    shift: 'F',
+    code: 'KeyF',
+    keycode: '70',
+  },
+  {
+    small: 'g',
+    shift: 'G',
+    code: 'KeyG',
+    keycode: '71',
+  },
+  {
+    small: 'h',
+    shift: 'H',
+    code: 'KeyH',
+    keycode: '72',
+  },
+  {
+    small: 'j',
+    shift: 'J',
+    code: 'KeyJ',
+    keycode: '74',
+  },
+  {
+    small: 'k',
+    shift: 'K',
+    code: 'KeyK',
+    keycode: '75',
+  },
+  {
+    small: 'l',
+    shift: 'L',
+    code: 'KeyL',
+    keycode: '76',
+  },
+  {
+    small: ';',
+    shift: ':',
+    code: 'Semicolon',
+    keycode: '186',
+  },
+  {
+    small: "'",
+    shift: '"',
+    code: 'Quote',
+    keycode: '222',
+  },
+  {
+    small: '\\',
+    shift: '|',
+    code: 'Backslash',
+    keycode: '220',
+  },
+  {
+    small: 'Shift',
+    shift: null,
+    code: 'ShiftLeft',
+    keycode: '16',
+  },
+  {
+    small: '<',
+    shift: '>',
+    code: 'IntlBackslash',
+    keycode: '220',
+  },
+  {
+    small: 'z',
+    shift: 'Z',
+    code: 'KeyZ',
+    keycode: '90',
+  },
+  {
+    small: 'x',
+    shift: 'X',
+    code: 'KeyX',
+    keycode: '88',
+  },
+  {
+    small: 'c',
+    shift: 'C',
+    code: 'KeyC',
+    keycode: '67',
+  },
+  {
+    small: 'v',
+    shift: 'V',
+    code: 'KeyV',
+    keycode: '86',
+  },
+  {
+    small: 'b',
+    shift: 'B',
+    code: 'KeyB',
+    keycode: '66',
+  },
+  {
+    small: 'n',
+    shift: 'N',
+    code: 'KeyN',
+    keycode: '78',
+  },
+  {
+    small: 'm',
+    shift: 'M',
+    code: 'KeyM',
+    keycode: '77',
+  },
+  {
+    small: ',',
+    shift: '<',
+    code: 'Comma',
+    keycode: '188',
+  },
+  {
+    small: '.',
+    shift: '>',
+    code: 'Period',
+    keycode: '190',
+  },
+  {
+    small: '/',
+    shift: '?',
+    code: 'Slash',
+    keycode: '191',
+  },
+  {
+    small: 'Shift',
+    shift: null,
+    code: 'ShiftRight',
+    keycode: '16',
+  },
+  {
+    small: 'Ctrl',
+    shift: null,
+    code: 'ControlLeft',
+    keycode: '17',
+  },
+  {
+    small: 'Alt',
+    shift: null,
+    code: 'AltLeft',
+    keycode: '18',
+  },
+  {
+    small: ' ',
+    shift: null,
+    code: 'Space',
+    keycode: '32',
+  },
+  {
+    small: 'Alt',
+    shift: null,
+    code: 'AltRight',
+    keycode: '225',
+  },
+  {
+    small: 'Ctrl',
+    shift: null,
+    code: 'ControlRight',
+    keycode: '17',
+  },
+  {
+    small: '&larr;',
+    shift: null,
+    code: 'ArrowLeft',
+    keycode: '37',
+  },
+  {
+    small: '&uarr;',
+    shift: null,
+    code: 'ArrowUp',
+    keycode: '38',
+  },
+  {
+    small: '&darr;',
+    shift: null,
+    code: 'ArrowDown',
+    keycode: '40',
+  },
+  {
+    small: '&rarr;',
+    shift: null,
+    code: 'ArrowRight',
+    keycode: '39',
+  },
+  {
+    small: 'Win',
+    shift: null,
+    code: 'Win',
+    keycode: '1000',
+  },
+];
